@@ -42,6 +42,12 @@ spending = [p for p in api.action.package_list() if p.startswith('inkoopdata')]
 
 packages = [api.action.package_show(id=i) for i in spending]
 
+#
 # Get all the spending files
+#
+# An explanation of the values in the data, including the 'staffels'
+# is given at https://data.overheid.nl/informatie-over-spendata
+#
+#
 for package in package:
     download_package_resource_files(package)
