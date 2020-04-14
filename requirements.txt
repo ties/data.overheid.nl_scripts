@@ -1,2 +1,2 @@
 ckanapi==3.5
-requests==2.8.1
+requests==2.20.0
